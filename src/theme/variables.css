@@ -1,2 +1,56 @@
-/* For information on how to create your own theme, please refer to:
-http://ionicframework.com/docs/theming/ */
+
+/* LIGHT MODE */
+:root {
+  --ion-color-primary: #3867e8;
+  --ion-color-primary-rgb: 56, 103, 232;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #315bcd;
+  --ion-color-primary-tint: #4c78eb;
+
+  --ion-color-success: #16a36a;
+
+  --ion-background-color: #f5f7fc;
+  --ion-text-color: #202b3c;
+
+  --ion-card-background: #ffffff;
+  --ion-toolbar-background: #ffffff;
+  --ion-item-background: #ffffff;
+  --ion-border-color: #e5e9f2;
+
+  --ion-color-medium: #778196;
+}
+
+/* DARK MODE */
+body.dark {
+  --ion-background-color: #101522;
+  --ion-text-color: #edf1fa;
+
+  --ion-card-background: #1b2333;
+  --ion-toolbar-background: #171e2c;
+  --ion-item-background: #202a3b;
+  --ion-border-color: #303b4e;
+
+  --ion-color-medium: #a0aec0;
+
+  --ion-color-primary: #7195ff;
+  --ion-color-primary-rgb: 113, 149, 255;
+  --ion-color-primary-contrast: #101522;
+  --ion-color-primary-contrast-rgb: 16, 21, 34;
+  --ion-color-primary-shade: #6383e0;
+  --ion-color-primary-tint: #80a1ff;
+
+  --ion-color-success: #43d49a;
+}
+
+/* Transisi warna */
+body,
+ion-content,
+ion-toolbar,
+ion-item,
+ion-card {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
